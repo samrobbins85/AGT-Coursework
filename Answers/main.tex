@@ -1,0 +1,79 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{pxfonts}
+\usepackage{xcolor}
+\lstset{language=Python,
+	basicstyle=\ttfamily,
+	keywordstyle=\bfseries,
+	showstringspaces=false,
+	morekeywords={if, else, then, print, end, for, do, while,output},
+	tabsize=4,
+	mathescape=true,
+	moredelim=**[is][\color{red}]{@}{@},
+}
+
+\pagestyle{headandfoot}
+\firstpageheadrule
+\runningheadrule
+\firstpageheader{Algorithmic Game Theory}{}{mbkb74}
+\runningheader{Algorithmic Game Theory}{Individual Component}{mbkb74}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+\renewcommand{\solutiontitle}{\noindent\textbf{Answer:}\par\noindent}
+
+
+\printanswers
+\usepackage{graphicx}
+\marksnotpoints
+\bracketedpoints
+\pointsdroppedatright
+\pointsinrightmargin
+\begin{document}
+\begin{center}
+    \LARGE{Algorithmic Game Theory Summative Assignment -- Individual Component}\\[0.1cm]
+\end{center}
+
+\begin{questions}
+
+    \question 	      Consider the following instance of the load balancing game where the number of tasks is equal to the number of machines, and in particular we have:
+    \begin{itemize}
+        \item $m$ identical machines $M_1, M_2, \dots, M_m$ (all of speed 1),
+        \item $m$ identical tasks $w_1 = w_2 = \dots = w_m = 1$.
+    \end{itemize}
+    Consider also the mixed strategy profile $A$ where each of the tasks is assigned to all machines equiprobably (i.e. with probability $1/m$).
+    \begin{parts}
+        \part[3]Calculate the ratio $cost(A)/cost(OPT)$ in the special case where $m=2$.
+        \begin{solution}[2in]
+            \begin{itemize}
+                \item There are $2^2=4$ possible assignments of 2 tasks to 2 machines
+                \item In two of these both tasks are assigned to 1 machine (time 2)
+                \item In the other two one task is assigned to each machine (time 1)
+                \item The Cost of A is therefore $1/4(2+2+1)=1.5$
+                \item However the optimal cost is where one is assigned to each machine $1$
+                \item The ratio is therefore 1.5
+            \end{itemize}
+        \end{solution}
+        \part[3]Calculate the ratio $cost(A)/cost(OPT)$ in the special case where $m=3$.
+        \begin{solution}[2in]
+        \end{solution}
+        \part[5]Discuss what this ratio is for arbitrary $m$. What does this imply about the Price of Anarchy on identical machines for mixed Nash equilibria?
+        \begin{solution}[2in]
+        \end{solution}
+    \end{parts}
+    \droptotalpoints
+    \newpage
+
+
+\end{questions}
+
+
+
+
+
+\end{document}
+
+
+
+
