@@ -32,6 +32,14 @@
 	      Consider also the mixed strategy profile $A$ where each of the tasks is assigned to all machines equiprobably (i.e. with probability $1/m$).
 	      \begin{enumerate}
 		      \item[(a)] Calculate the ratio $cost(A)/cost(OPT)$ in the special case where $m=2$.  \hfill{\bf [3 marks]}\smallskip
+		            \begin{itemize}
+			            \item There are $2^2=4$ possible assignments of 2 tasks to 2 machines
+			            \item In two of these both tasks are assigned to 1 machine (time 2)
+			            \item In the other two one task is assigned to each machine (time 1)
+			            \item The Cost of A is therefore $1/4(2+2+1)=1.5$
+			            \item However the optimal cost is where one is assigned to each machine $1$
+			            \item The ratio is therefore 1.5
+		            \end{itemize}
 		      \item[(b)] Calculate the ratio $cost(A)/cost(OPT)$ in the special case where $m=3$.  \hfill{\bf [3 marks]}\smallskip
 		      \item[(c)] Discuss what this ratio is for arbitrary $m$. What does this imply about the Price of Anarchy on identical machines for mixed Nash equilibria?  \hfill{\bf [5 marks]}\smallskip
 	      \end{enumerate}
