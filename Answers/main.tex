@@ -189,12 +189,17 @@
     \begin{parts}
         \part[3]What are the prices of the sellers' items ($1^{st}$ item, $2^{nd}$ item, \ldots, $k^{th}$ item) when the market clears? Which buyer gets the $1^{st}$ item and at what price?
         \begin{solution}[2in]
+            The first item has a price of $k-1$ and the remaining items all have a price of 0. The first buyer gets the 1st item at price $k-1$
         \end{solution}
         \part[6]Justify your answers to (a).
         \begin{solution}[2in]
+            Initially set the prices for all the items to 0. In this case all the buyers want to buy item 1 as they have valuation $\geqslant 1$ for that item and 0 for the others. By raising the price of item 1 by 1 the kth buyer now has k preferred sellers, as they get payoff of 0 for item 1 as it has price 1 and they value it at 1 and they get payoff of 0 for the rest of the items as they have price 0 and they value them at 0.
+
+            By continuing to raise the price of item 1, each buyer from $k$ to $3$ no longer becomes interested in the first item, and is now equally interested in the rest of the items. At a price of $k-1$ buyers 1 and 2 are both interested in item 1, but buyer 2 is also interested in the rest of the items, giving a perfect matching where every buyer buys the item associated with their number. (Along with lots of other perfect matchings as buyers $2$ through to $k$ can buy any of the items, as long as no two buy the same)
         \end{solution}
         \part[3]Which kind of auction does the construction of market-clearing prices procedure implement in this case?
         \begin{solution}[2in]
+            An English auction as the price increases until buyers are no longer interested as the price has exceeded their valuation
         \end{solution}
     \end{parts}
     \droptotalpoints
