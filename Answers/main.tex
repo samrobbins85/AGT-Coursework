@@ -79,10 +79,32 @@
 
             This would make the cost of A
             $$
-                \dfrac{1}{n^n}(n\times n^n)
+                \dfrac{1}{m^m}(m\times m^m)
             $$
 
-            Which would be simply $n$
+            Which would be simply $m$
+
+            The cost(OPT) will be 1 for any m, as there is an optimal assignment of 1 item for each machine, and with a speed of 1 and a size of task of 1, this will have a cost of 1.
+
+            The price of anarchy is the ratio between the social cost of the worst Nash equilibrium and the optimal social cost. So in this case the ration cost(A)/cost(OPT) is the price of anarchy.
+
+            More formally, this is defined as
+
+            $$
+                \operatorname{PoA}(m)=\max _{G \in \mathcal{G}(m) } \max_{P \in N a \operatorname{sh}(G)}\frac{\operatorname{cost}(P)}{\operatorname{opt}(G)}
+            $$
+
+            For a mixed nash equilibrium on identical machines, cost(P) is:
+
+            $$
+                cost(P)=\mathcal{O}\bigg(\dfrac{\log m}{\log \log m}\bigg) \cdot \operatorname{opt}(G)
+            $$
+
+            As discussed before, $\operatorname{opt}(G)$ is 1, reducing the formula to
+
+            $$
+                cost(P)=\mathcal{O}\bigg(\dfrac{\log m}{\log \log m}\bigg)
+            $$
         \end{solution}
     \end{parts}
     \droptotalpoints
@@ -176,7 +198,6 @@
         \end{solution}
     \end{parts}
     \droptotalpoints
-    \newpage
     \question 	      	      We consider a (matching) market of $k$ sellers and $k$ buyers, where $k$ is an integer, $k>0$.
     Each seller sells an item and the prices of the items are initially all zero. Buyer $i$ has valuation $k-i+1$ for the first item and valuation $0$ for every other item, as shown in the following diagram.
 
